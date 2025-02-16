@@ -313,7 +313,7 @@ function App() {
               <Twitter className="w-7 h-7" />
             </a>
             <a href="https://scholar.google.com/citations?user=9wBLgnYAAAAJ&hl=en&oi=ao/" className="text-gray-600 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors">
-              <img src="/assets/google-scholar.svg" className="w-7 h-7" />
+              <img src="/img/google-scholar.svg" className="w-7 h-7" />
             </a>
           </div>
         </div>
