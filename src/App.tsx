@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Twitter, Instagram, Moon, Sun, Menu, X, Code, Cpu, Database, FileDown } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, GoogleScholar, Moon, Sun, Menu, X, Code, Cpu, Database, FileDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 // Mock data - in a real app, this would come from a CMS or API
@@ -178,7 +178,7 @@ function App() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                   <a
-                    href="YOUR_GOOGLE_DRIVE_RESUME_LINK_HERE"
+                    href="https://drive.google.com/drive/u/0/home?lfhs=2"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-sky-500 to-violet-500 hover:from-sky-600 hover:to-violet-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
@@ -312,8 +312,8 @@ function App() {
             <a href="https://twitter.com/BiswasPoudel3" className="text-gray-600 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors">
               <Twitter className="w-7 h-7" />
             </a>
-            <a href="https://www.instagram.com/biswaspoudel/" className="text-gray-600 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors">
-              <Instagram className="w-7 h-7" />
+            <a href="https://scholar.google.com/citations?user=9wBLgnYAAAAJ&hl=en&oi=ao/" className="text-gray-600 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors">
+              <GoogleScholar className="w-7 h-7" />
             </a>
           </div>
         </div>
