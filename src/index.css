@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode Colors */
+    --color-primary: 56 189 248;        /* #38BDF8 - Electric Blue */
+    --color-primary-hover: 14 165 233;  /* #0EA5E9 - Darker Electric Blue */
+    
+    --color-secondary: 139 92 246;      /* #8B5CF6 - Vibrant Purple */
+    --color-secondary-hover: 124 58 237; /* #7C3AED - Darker Purple */
+    
+    --color-accent: 20 184 166;         /* #14B8A6 - Teal */
+    --color-accent-hover: 13 148 136;   /* #0D9488 - Darker Teal */
+    
+    --color-background: 255 255 255;    /* #FFFFFF - Pure White */
+    --color-surface: 248 249 250;       /* #F8F9FA - Light Gray */
+    
+    --color-text: 45 52 54;            /* #2D3436 - Dark Gray */
+    --color-text-heading: 27 29 30;     /* #1B1D1E - Darker Gray */
+    
+    /* Status Colors */
+    --color-success: 34 197 94;         /* #22C55E - Green */
+    --color-error: 239 68 68;           /* #EF4444 - Red */
+    --color-warning: 245 158 11;        /* #F59E0B - Amber */
+    --color-info: 56 189 248;           /* #38BDF8 - Blue */
+  }
+
+  .dark {
+    /* Dark Mode Colors */
+    --color-primary: 96 165 250;        /* #60A5FA - Brighter Blue */
+    --color-primary-hover: 147 197 253; /* #93C5FD - Even Brighter Blue */
+    
+    --color-secondary: 167 139 250;     /* #A78BFA - Lighter Purple */
+    --color-secondary-hover: 192 132 252; /* #C084FC - Even Lighter Purple */
+    
+    --color-accent: 45 212 191;         /* #2DD4BF - Brighter Teal */
+    --color-accent-hover: 94 234 212;   /* #5EEAD4 - Even Brighter Teal */
+    
+    --color-background: 18 18 18;       /* #121212 - Rich Dark */
+    --color-surface: 24 24 27;          /* #18181B - Dark Gray */
+    
+    --color-text: 229 229 229;          /* #E5E5E5 - Light Gray */
+    --color-text-heading: 255 255 255;  /* #FFFFFF - White */
+    
+    /* Status Colors - Brightened for Dark Mode */
+    --color-success: 74 222 128;        /* #4ADE80 - Lighter Green */
+    --color-error: 248 113 113;         /* #F87171 - Lighter Red */
+    --color-warning: 251 191 36;        /* #FBB724 - Lighter Amber */
+    --color-info: 96 165 250;           /* #60A5FA - Lighter Blue */
+  }
+}
+
+/* Tech-inspired decorative elements */
+.tech-pattern {
+  background-color: rgb(var(--color-background));
+  background-image: 
+    radial-gradient(rgb(var(--color-primary) / 0.15) 2px, transparent 2px),
+    radial-gradient(rgb(var(--color-secondary) / 0.15) 2px, transparent 2px);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  position: relative;
+}
+
+.tech-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom,
+    rgb(var(--color-background)) 0%,
+    transparent 10%,
+    transparent 90%,
+    rgb(var(--color-background)) 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, 
+    rgb(var(--color-primary)) 0%, 
+    rgb(var(--color-secondary)) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Tech-inspired decorative elements */
+.tech-grid {
+  background-image: radial-gradient(rgb(var(--color-primary) / 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glow-effect {
+  box-shadow: 0 0 15px rgb(var(--color-primary) / 0.5);
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, 
+    rgb(var(--color-primary)) 0%, 
+    rgb(var(--color-secondary)) 100%
+  );
+}
+
+.gradient-surface {
+  background: linear-gradient(135deg,
+    rgb(var(--color-surface)) 0%,
+    rgb(var(--color-background)) 100%
+  );
+}
+
+/* Interactive element animations */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-surface));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-primary) / 0.8);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-primary));
+}
